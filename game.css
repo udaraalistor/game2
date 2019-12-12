@@ -1,0 +1,296 @@
+body{
+    overflow: hidden;
+    /*cursor: none;*/
+
+    /*background-image: url("image/samurai 1.png");*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    width: 100%;
+    height: 100%;
+
+}
+
+#backback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+
+.step{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    top: 45%;
+    left: 45%;
+    transition: top 0.5s;
+    z-index: 2;
+
+}
+
+#section1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*animation: back 5s infinite;*/
+    z-index: -10;
+
+}
+
+
+.img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 40px;
+    top: 450px;
+    /*transform: translateX(-180px);*/
+
+    /*transform: rotateY(-180deg);*/
+}
+
+.ene{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -110px;
+}
+
+@keyframes back {
+    0%{
+
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#line{
+    position: relative;
+    width: 100%;
+    height: 710px;
+    border-bottom: 2px solid transparent;
+    overflow: hidden;
+
+}
+
+/*#p1{*/
+    /*position: absolute;*/
+    /*padding: 55px 58px;*/
+    /*bottom: -16px;*/
+    /*top: 497px;*/
+    /*color: black;*/
+    /*border: 2px solid darkorchid;*/
+    /*left: 100px;*/
+/*}*/
+
+#div2{
+    position: absolute;
+    bottom: 55px;
+    left: 110%;
+    width: 6400px;
+
+}
+
+#div2 div{
+
+    display: inline-block;
+    right: 0;
+    vertical-align: bottom;
+    margin-right: 700px;
+    position: relative;
+    /*z-index: 10;*/
+}
+
+.a1{
+    /*outline: none;*/
+padding: 20px;
+
+}
+
+.a2{
+    /*outline: none;*/
+padding: 30px 10px;
+}
+
+.a3{
+    /*outline: none;*/
+padding: 40px 5px;
+}
+
+.c{
+    /*outline: none;*/
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#btn{
+    width: 100%;
+    height: 2000px;
+    /*background: darkslategray;*/
+    /*background-image: url("image/niXsm2L.jpg");*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: black;
+
+}
+
+.button{
+    display: inline-block;
+    padding: 20px;
+    font-size: 50px;
+    color: red;
+    /*margin-top: 300px;*/
+    background: yellow;
+    cursor: pointer;
+    position: relative;
+    top: 190px;
+
+
+
+}
+
+.again{
+    display: none;
+}
+
+#bullet{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /*background-color: transparent;*/
+    background: transparent;
+    left: 200px;
+    top: 540px;
+    transition: left .5s;
+    display: none;
+}
+
+#imgbul{
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    left: -31px;
+    top: 5px;
+
+}
+
+#heart{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 310px;
+    top: -5px;
+}
+
+.hpbar{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    /*border: solid 1px black;*/
+    left: 80px;
+    top: 5px;
+    background: white;
+}
+
+.fill{
+    height: 100%;
+    background: red;
+    transition: width 0.5s;
+}
+
+.hpbarvalue{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.score {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    /* border: solid 1px black; */
+    left: 1204px;
+    top: 10px;
+    background: transparent;
+}
+
+/*.fill{*/
+    /*height: 100%;*/
+    /*background: red;*/
+    /*transition: width 0.5s;*/
+/*}*/
+
+
+#ss{
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 50px;
+}
+
+.scorevalue{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    left: 200px;
+    /* top: -35px; */
+    bottom: 50px;
+}
+
+#startimg{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: 0px;
+    top: 253px;
+
+}
+
+#backgroundmenu{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 50%;
+
+
+
+}
+
+
+
+
+#ui1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+#headline{
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+
