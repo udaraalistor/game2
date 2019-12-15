@@ -1,5 +1,5 @@
 
-
+let interval;
 $('.start').click(function () {
     $('#btn').css('display', 'none');
     $('.start').css('display', 'none');
@@ -8,73 +8,73 @@ $('.start').click(function () {
     waraudio.loop=true;
     waraudio.play();
 
-    var interval = setInterval(function () {
+    interval = setInterval(function () {
         // if (f3(img, $(".ene"))){
         //     phv.setValue(d-10);
         //     // gameover();
         // }
 
+        console.log("adkjhga");
 
         if (f3(img,gg1)){
             // d-=10;
             // $('.hpbarvalue').text(d);
 
-            gameover();
+            // gameover();
             phv.setValue(d-=10);
         }
 
         if (f3(img,gg2)){
             // d-=10;
             // $('.hpbarvalue').text(d);
-            gameover();
+            // gameover();
             phv.setValue(d-=10);
         }
 
         if (f3(img,gg3)){
             // d-=10;
             // $('.hpbarvalue').text(d);
-            gameover();
+            // gameover();
             phv.setValue(d-=10);
         }
 
         if (f3(img,gg4)){
             // d-=10;
             // $('.hpbarvalue').text(d);
-            gameover();
+            // gameover();
             phv.setValue(d-=10);
         }
 
         if (f3(img,gg5)){
             // d-=10;
             // $('.hpbarvalue').text(d);
-            gameover();
+            // gameover();
             phv.setValue(d-=10);
         }
 
         if (f3(img,gg6)){
             // d-=10;
             // $('.hpbarvalue').text(d);
-            gameover();
+            // gameover();
             phv.setValue(d-=10);
         }
 
 
 
-        function gameover() {
-            // $('#div2').stop(true);
-            // $('#div1').stop(true);
-            // $('.c').stop(true);
-            // $('#btn').css('display', 'inline-block');
-            // $('.again').css('display', 'inline-block');
 
-            clearInterval(interval);
-
-
-
-        }
-    });
+    },700);
 
 });
+
+function gameover() {
+    // $('#div2').stop(true);
+    // $('#div1').stop(true);
+    // $('.c').stop(true);
+    // $('#btn').css('display', 'inline-block');
+    // $('.again').css('display', 'inline-block');
+
+    clearInterval(interval);
+}
 
 var gg1= $('#gg1');
 var gg2= $('#gg2');
@@ -223,7 +223,7 @@ $(window).on('click', function () {
     audio.play();
 
 
-    var intervals = setInterval(function () {
+    let intervals= setInterval(function () {
 
         if (f3(imgbul,gg1)){
             $('#gg1').css('display','none');
@@ -273,32 +273,16 @@ $(window).on('click', function () {
             gameover1();
         }
 
+             function gameover1() {
+                 clearInterval(intervals);
 
 
-        function gameover1() {
-            // $('#div2').stop(true);
-            // $('#div1').stop(true);
-            // $('.c').stop(true);
-            // $('#btn').css('display', 'inline-block');
-            // $('.again').css('display', 'inline-block');
-
-
-            //
-            // $('#gg1').css('display','none');
-            // $('#gg2').css('display','none');
-            // $('#gg3').css('display','none');
-            // $('#gg4').css('display','none');
-            // $('#gg5').css('display','none');
-            // $('#gg6').css('display','none');
-
-            clearInterval(intervals);
-
-
-        }
+             }
     });
-
-
 });
+
+
+
 
 function bull() {
     $('#bullet').css({
